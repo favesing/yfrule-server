@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<import resource="classpath:urule-console-context.xml" />
+
+	<!-- demo -->
+	<bean id="methodTest" class="com.qsq.MethodTest"></bean>
+	<bean id="testScoringStrategy" class="com.qsq.TestScoringStrategy"></bean>
+	
+	<!-- 元方 -->
+	<bean id="customAction" class="com.yf.rule.action.CustomAction"></bean>
+	<bean id="customMathAction" class="com.bstek.urule.runtime.builtinaction.CustomMathAction"></bean>
+	
+	<bean parent="urule.props">
+		<property name="location">
+			<value>/WEB-INF/configure.properties</value>
+		</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<variables clazz="com.yf.rule.entity.Customer">
+  <variable name="age" label="年龄" type="Integer" act="InOut"/>
+  <variable name="birthday" label="出生日期" type="Date" act="InOut"/>
+  <variable name="company" label="工作单位" type="String" act="InOut"/>
+  <variable name="companyAddress" label="工作单位地址" type="String" act="InOut"/>
+  <variable name="gender" label="性别" type="Boolean" act="InOut"/>
+  <variable name="idCard" label="身份证号" type="String" act="InOut"/>
+  <variable name="job" label="职业" type="String" act="InOut"/>
+  <variable name="mobile" label="手机号" type="String" act="InOut"/>
+  <variable name="name" label="姓名" type="String" act="InOut"/>
+  <variable name="zmscore" label="芝麻分" type="Integer" act="InOut"/>
+</variables>
