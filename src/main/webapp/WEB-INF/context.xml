@@ -11,8 +11,7 @@
 	
 	<!-- 元方 -->
 	<bean id="customAction" class="com.yf.rule.action.CustomAction"></bean>
-	<bean id="customMathAction" class="com.bstek.urule.runtime.builtinaction.CustomMathAction"></bean>
-	<bean id="customMathAction2" class="com.yf.rule.builtinaction.CustomMathAction"></bean>
+	<bean id="customMathAction" class="com.yf.rule.builtinaction.CustomMathAction"></bean>
 	
 	<bean parent="urule.props">
 		<property name="location">
